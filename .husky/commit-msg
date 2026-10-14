@@ -1,0 +1,9 @@
+npx --no -- commitlint --edit "$1" || {
+    echo ""
+    echo "El mensaje de commit no cumple con el formato."
+    echo "Usa: tipo(alcance opcional): descripción en español."
+    echo "Ejemplo: feat: agregar validación de variables de entorno."
+    echo "Tipos validos: feat, fix, docs, style, refactor, perf, test, build, ci,
+    chore, revert"
+    exit 1
+}

@@ -1,0 +1,6 @@
+npx lint-staged || {
+    echo ""
+    echo "La revisión de lint o formato fallo en los archivos del commit."
+    echo "Corrige los errores indicados arriba y vuelve a intentar."
+    exit 1
+}

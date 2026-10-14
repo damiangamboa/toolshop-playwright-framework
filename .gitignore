@@ -1,0 +1,19 @@
+# dependencias
+node_modules/
+
+# secretos y sesiones (nunca se versionan)
+.env
+.env.*
+!.env.example
+.auth/
+
+# artefactos de ejecución (traces y reportes que pueden contener datos)
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache
+
+# logs y sistema operativo
+npm-debug.log*
+.DS_Store
+Thumbs.db
